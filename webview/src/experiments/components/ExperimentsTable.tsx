@@ -1,3 +1,13 @@
+import {
+  ColumnDef,
+  ColumnOrderState,
+  ColumnSizingState,
+  Row as TableRow,
+  getCoreRowModel,
+  getExpandedRowModel,
+  useReactTable
+} from '@tanstack/react-table'
+import { Commit } from 'dvc/src/experiments/webview/contract'
 import React, {
   MutableRefObject,
   useCallback,
@@ -6,26 +16,16 @@ import React, {
   useState
 } from 'react'
 import { useSelector } from 'react-redux'
-import { Commit } from 'dvc/src/experiments/webview/contract'
-import {
-  ColumnDef,
-  useReactTable,
-  Row as TableRow,
-  getCoreRowModel,
-  getExpandedRowModel,
-  ColumnSizingState,
-  ColumnOrderState
-} from '@tanstack/react-table'
-import { buildColumns } from './table/body/columns/Columns'
 import { AddStage } from './AddStage'
 import { AddColumns } from './emptyState/AddColumns'
+import { buildColumns } from './table/body/columns/Columns'
 import { Table } from './table/Table'
-import { ExperimentsState } from '../store'
 import { resizeColumn } from '../util/messages'
 import { isDefaultColumn } from '../util/columns'
+import { ExperimentsState } from '../store'
 
-const DEFAULT_COLUMN_WIDTH = 90
-const MINIMUM_COLUMN_WIDTH = 90
+const DEFAULT_COLUMN_WIDTH = 60
+const MINIMUM_COLUMN_WIDTH = 30
 
 const reportResizedColumn = (
   state: ColumnSizingState,

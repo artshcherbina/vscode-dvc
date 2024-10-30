@@ -629,6 +629,11 @@
           "type": "number",
           "default": 5
         },
+        "dvc.experimentsTableHeadWidth": {
+          "description": "Default width of Experiment table head rows",
+          "type": "number",
+          "default": 50
+        },
         "dvc.focusedProjects": {
           "description": "A subset of paths to the workspace's available DVC projects. Using this option will override project auto-discovery. Only absolute paths inside of the workspace will be included. All other DVC projects in the workspace will be ignored.",
           "type": [

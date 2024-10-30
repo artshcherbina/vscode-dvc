@@ -9,6 +9,7 @@ export enum ConfigKey {
   DO_NOT_SHOW_SETUP_AFTER_INSTALL = 'dvc.doNotShowSetupAfterInstall',
   DVC_PATH = 'dvc.dvcPath',
   EXP_TABLE_HEAD_MAX_HEIGHT = 'dvc.experimentsTableHeadMaxHeight',
+  EXP_TABLE_HEAD_WIDTH = 'dvc.experimentsTableHeadWidth',
   FOCUSED_PROJECTS = 'dvc.focusedProjects',
   PYTHON_PATH = 'dvc.pythonPath'
 }

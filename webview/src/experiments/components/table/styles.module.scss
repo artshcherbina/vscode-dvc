@@ -5,10 +5,10 @@
 @import '../../../shared/variables';
 @import '../../../shared/mixins';
 
-$nested-row-padding: 1.35rem;
+$nested-row-padding: 0.35rem;
 $row-border: 1px solid $border-color;
-$edge-padding: 0.8rem;
-$cell-padding: 0.5rem;
+$edge-padding: 0.1rem;
+$cell-padding: 0.1rem;
 $workspace-row-edge-margin: $edge-padding - $cell-padding;
 $badge-size: 0.85rem;
 
